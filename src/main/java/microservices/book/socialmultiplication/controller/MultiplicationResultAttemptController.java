@@ -1,10 +1,10 @@
-package microservice.book.socialmultiplication.controller;
+package microservices.book.socialmultiplication.controller;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import microservice.book.socialmultiplication.domain.MultiplicationResultAttempt;
-import microservice.book.socialmultiplication.service.MultiplicationService;
+import microservices.book.socialmultiplication.domain.MultiplicationResultAttempt;
+import microservices.book.socialmultiplication.service.MultiplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/results")
-public final class MultiplicationResultAttemptController {
+final class MultiplicationResultAttemptController {
 
     private final MultiplicationService multiplicationService;
 
@@ -27,9 +27,9 @@ public final class MultiplicationResultAttemptController {
     ResponseEntity<ResultResponse> postResult(@RequestBody MultiplicationResultAttempt multiplicationResultAttempt) {
         return ResponseEntity.ok(
                 new ResultResponse(multiplicationService
-                .checkAttempt(multiplicationResultAttempt))
-        );
+                        .checkAttempt(multiplicationResultAttempt)));
     }
+
     @RequiredArgsConstructor
     @NoArgsConstructor(force = true)
     @Getter

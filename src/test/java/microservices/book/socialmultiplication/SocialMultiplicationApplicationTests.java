@@ -1,4 +1,4 @@
-package microservice.book.socialmultiplication;
+package microservices.book.socialmultiplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

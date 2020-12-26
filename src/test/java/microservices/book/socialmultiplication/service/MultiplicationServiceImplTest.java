@@ -1,15 +1,14 @@
-package microservice.book.socialmultiplication.service;
+package microservices.book.socialmultiplication.service;
 
-import microservice.book.socialmultiplication.domain.Multiplication;
-import microservice.book.socialmultiplication.domain.MultiplicationResultAttempt;
-import microservice.book.socialmultiplication.domain.User;
+import microservices.book.socialmultiplication.domain.Multiplication;
+import microservices.book.socialmultiplication.domain.MultiplicationResultAttempt;
+import microservices.book.socialmultiplication.domain.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.BDDMockito.given;
 
 public class MultiplicationServiceImplTest {
     private MultiplicationServiceImpl multiplicationServiceImpl;

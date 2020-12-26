@@ -1,8 +1,8 @@
-package microservice.book.socialmultiplication.controller;
+package microservices.book.socialmultiplication.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import microservice.book.socialmultiplication.domain.Multiplication;
-import microservice.book.socialmultiplication.service.MultiplicationService;
+import microservices.book.socialmultiplication.domain.Multiplication;
+import microservices.book.socialmultiplication.service.MultiplicationService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +17,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 

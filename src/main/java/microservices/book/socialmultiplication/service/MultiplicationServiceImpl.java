@@ -1,8 +1,7 @@
-package microservice.book.socialmultiplication.service;
+package microservices.book.socialmultiplication.service;
 
-import microservice.book.socialmultiplication.domain.Multiplication;
-import microservice.book.socialmultiplication.domain.MultiplicationResultAttempt;
-import org.omg.CORBA.FREE_MEM;
+import microservices.book.socialmultiplication.domain.Multiplication;
+import microservices.book.socialmultiplication.domain.MultiplicationResultAttempt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +25,8 @@ public class MultiplicationServiceImpl implements MultiplicationService{
 
     @Override
     public boolean checkAttempt(MultiplicationResultAttempt resultAttempt) {
-        return resultAttempt.getResultAttempt() == resultAttempt.getMultiplication().getFactorA() * resultAttempt.getMultiplication().getFactorB();
+        return resultAttempt.getResultAttempt() ==
+                resultAttempt.getMultiplication().getFactorA() *
+                        resultAttempt.getMultiplication().getFactorB();
     }
 }

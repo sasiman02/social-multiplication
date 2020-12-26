@@ -1,4 +1,4 @@
-package microservice.book.socialmultiplication.service;
+package microservices.book.socialmultiplication.service;
 
 import org.junit.Before;
 import org.junit.Test;

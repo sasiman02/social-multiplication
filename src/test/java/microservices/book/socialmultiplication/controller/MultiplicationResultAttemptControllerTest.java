@@ -1,10 +1,10 @@
-package microservice.book.socialmultiplication.controller;
+package microservices.book.socialmultiplication.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import microservice.book.socialmultiplication.domain.Multiplication;
-import microservice.book.socialmultiplication.domain.MultiplicationResultAttempt;
-import microservice.book.socialmultiplication.domain.User;
-import microservice.book.socialmultiplication.service.MultiplicationService;
+import microservices.book.socialmultiplication.domain.Multiplication;
+import microservices.book.socialmultiplication.domain.MultiplicationResultAttempt;
+import microservices.book.socialmultiplication.domain.User;
+import microservices.book.socialmultiplication.service.MultiplicationService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
